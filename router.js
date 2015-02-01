@@ -3,13 +3,13 @@
  */
 
 
-function route(handle, pathname, response, postData) {
+function route(handle, pathname, response, request) {
     console.log("I am going to route request " + pathname);
 
 //    console.log(" +++ " + handle[pathname]);
 
     if (typeof handle[pathname] === 'function') {
-        handle[pathname](response, postData);
+        handle[pathname](response, request);
     } else {
         console.log("No request handler for " + pathname);
 
