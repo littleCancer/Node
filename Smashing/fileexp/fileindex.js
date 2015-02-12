@@ -6,7 +6,11 @@ var fs = require('fs'),
     stdin = process.stdin,
     stdout = process.stdout;
 
+
+
 function readFiles (err, files) {
+
+
     console.log('');
 
     if (!files.length) {
@@ -54,8 +58,13 @@ function readFiles (err, files) {
 
     function option(data) {
         var filename = files[Number(data)];
-        console.log('selected filename ' + filename);
-        if (!filename) {
+        console.log('selected filename ' + filename + ' ' + Number(data));
+
+
+        if (Number(data) > 6) {
+            console.error("Sad cu bacim exception ");
+            process.exit(1);
+        } else if (!filename) {
             stdout.write('   \033[31mEnter your choice: \033[39m');
         } else {
             stdin.pause();
@@ -90,5 +99,12 @@ function readFiles (err, files) {
 
 var cwd = process.cwd();
 console.log("cueent dict", cwd);
+console.log("__dir" + __dirname);
+console.log(" -- " + process.argv);
+console.log(" slice : --  " + process.argv.slice(2))
+
+process.on('SIGKILL', function() {
+    console.log(" utepase me sa signal ");
+});
 
 fs.readdir(process.cwd(), readFiles);

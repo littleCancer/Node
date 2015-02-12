@@ -1,0 +1,154 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'up' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'up', null ]
+5 verbose cache add name=undefined spec="up" args=["up",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'up',
+6 verbose parsed url   path: 'up',
+6 verbose parsed url   href: 'up' }
+7 silly lockFile 7c0a25c0-up up
+8 verbose lock up /Users/steva/.npm/7c0a25c0-up.lock
+9 silly lockFile 7c0a25c0-up up
+10 silly lockFile 7c0a25c0-up up
+11 verbose addNamed [ 'up', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile a953b1b5-up up@
+14 verbose lock up@ /Users/steva/.npm/a953b1b5-up.lock
+15 silly addNameRange { name: 'up', range: '*', hasData: false }
+16 verbose request where is /up
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 2e66954fc0a602dc
+19 verbose url raw /up
+20 verbose url resolving [ 'https://registry.npmjs.org/', './up' ]
+21 verbose url resolved https://registry.npmjs.org/up
+22 verbose request where is https://registry.npmjs.org/up
+23 info trying registry request attempt 1 at 19:37:49
+24 http GET https://registry.npmjs.org/up
+25 http 200 https://registry.npmjs.org/up
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Wed, 11 Feb 2015 18:37:49 GMT',
+26 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+26 silly registry.get     etag: '"DLGYNSAWFTMDLCWZB7EEP3ZKQ"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '12822',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-fra1220-FRA',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1423679869.498598,VS0,VE211',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'up', range: '*', hasData: true }
+28 silly addNameRange versions [ 'up',
+28 silly addNameRange   [ '0.1.0', '0.5.1', '0.5.2', '0.6.0', '0.6.1', '0.6.2' ] ]
+29 verbose addNamed [ 'up', '0.6.2' ]
+30 verbose addNamed [ '0.6.2', '0.6.2' ]
+31 silly lockFile 1f7e30a5-up-0-6-2 up@0.6.2
+32 verbose lock up@0.6.2 /Users/steva/.npm/1f7e30a5-up-0-6-2.lock
+33 silly lockFile 46239d7e-gistry-npmjs-org-up-up-0-6-2-tgz https://registry.npmjs.org/up/-/up-0.6.2.tgz
+34 verbose lock https://registry.npmjs.org/up/-/up-0.6.2.tgz /Users/steva/.npm/46239d7e-gistry-npmjs-org-up-up-0-6-2-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/up/-/up-0.6.2.tgz',
+35 verbose addRemoteTarball   'c56878999bf083e7b1a122afe49682b79ad29280' ]
+36 info retry fetch attempt 1 at 19:37:49
+37 verbose fetch to= /var/folders/pg/qq1q1wts15sfsmzxx1t6zv4h0000gn/T/npm-2856-Xbs4XflW/registry.npmjs.org/up/-/up-0.6.2.tgz
+38 http GET https://registry.npmjs.org/up/-/up-0.6.2.tgz
+39 http 200 https://registry.npmjs.org/up/-/up-0.6.2.tgz
+40 silly lockFile 46239d7e-gistry-npmjs-org-up-up-0-6-2-tgz https://registry.npmjs.org/up/-/up-0.6.2.tgz
+41 silly lockFile 46239d7e-gistry-npmjs-org-up-up-0-6-2-tgz https://registry.npmjs.org/up/-/up-0.6.2.tgz
+42 silly lockFile 1f7e30a5-up-0-6-2 up@0.6.2
+43 silly lockFile 1f7e30a5-up-0-6-2 up@0.6.2
+44 silly lockFile a953b1b5-up up@
+45 silly lockFile a953b1b5-up up@
+46 silly resolved [ { name: 'up',
+46 silly resolved     version: '0.6.2',
+46 silly resolved     description: 'cloudup command-line executable',
+46 silly resolved     keywords: [ 'cloudup', 'upload', 'file', 'files', 'cli' ],
+46 silly resolved     dependencies:
+46 silly resolved      { ansi: '~0.2.1',
+46 silly resolved        commander: '1.3.2',
+46 silly resolved        'cloudup-client': '0.3.1',
+46 silly resolved        ms: '0.6.1',
+46 silly resolved        printf: '0.1.2',
+46 silly resolved        uid2: '0.0.2',
+46 silly resolved        osthumb: '0.0.1',
+46 silly resolved        'term-list': '0.2.0',
+46 silly resolved        open: '0.0.3',
+46 silly resolved        'max-component': '~1.0.0',
+46 silly resolved        'sum-component': '~0.1.1',
+46 silly resolved        bytes: '~0.2.1',
+46 silly resolved        cliparoo: '1.0.0',
+46 silly resolved        'is-code': '~1.1.0',
+46 silly resolved        head: '~1.0.0',
+46 silly resolved        osenv: '~0.0.3' },
+46 silly resolved     devDependencies: { mocha: '*', should: '*', 'better-assert': '*' },
+46 silly resolved     engines: { node: '>=0.6.0' },
+46 silly resolved     preferGlobal: true,
+46 silly resolved     bin:
+46 silly resolved      { up: 'bin/up',
+46 silly resolved        'up-streams': 'bin/up-streams',
+46 silly resolved        'up-config': 'bin/up-config',
+46 silly resolved        'up-copy': 'bin/up-copy',
+46 silly resolved        'up-open': 'bin/up-open' },
+46 silly resolved     _id: 'up@0.6.2',
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'c56878999bf083e7b1a122afe49682b79ad29280',
+46 silly resolved        tarball: 'http://registry.npmjs.org/up/-/up-0.6.2.tgz' },
+46 silly resolved     _from: 'up@',
+46 silly resolved     _npmVersion: '1.3.21',
+46 silly resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: 'c56878999bf083e7b1a122afe49682b79ad29280',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/up/-/up-0.6.2.tgz' } ]
+47 info install up@0.6.2 into /usr/local/lib
+48 info installOne up@0.6.2
+49 verbose lib/node_modules/up unbuild
+50 verbose tar unpack /Users/steva/.npm/up/0.6.2/package.tgz
+51 silly lockFile 19ec4058-ar-usr-local-lib-node-modules-up tar:///usr/local/lib/node_modules/up
+52 verbose lock tar:///usr/local/lib/node_modules/up /Users/steva/.npm/19ec4058-ar-usr-local-lib-node-modules-up.lock
+53 silly lockFile 899ca6b2-s-steva-npm-up-0-6-2-package-tgz tar:///Users/steva/.npm/up/0.6.2/package.tgz
+54 verbose lock tar:///Users/steva/.npm/up/0.6.2/package.tgz /Users/steva/.npm/899ca6b2-s-steva-npm-up-0-6-2-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/up'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/up']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/up',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/up',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.1.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "up"
+60 error cwd /Users/steva/WebstormProjects/NodeGit1/Smashing/fileexp/up
+61 error node -v v0.10.35
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/up
+64 error fstream_path /usr/local/lib/node_modules/up
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/up'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]
