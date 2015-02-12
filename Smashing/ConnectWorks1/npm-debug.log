@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json application-name@0.0.1 No description
+5 warn package.json application-name@0.0.1 No repository field.
+6 warn package.json application-name@0.0.1 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/steva/WebstormProjects/NodeGit1/Smashing/ConnectWorks1',
+8 verbose install   [ 'connect' ] ]
+9 info preinstall application-name@0.0.1
+10 warn package.json connect@1.8.7 No README data
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'connect@2.0.7', null ]
+13 verbose cache add name=undefined spec="connect@2.0.7" args=["connect@2.0.7",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'connect@2.0.7',
+14 verbose parsed url   path: 'connect@2.0.7',
+14 verbose parsed url   href: 'connect@2.0.7' }
+15 verbose cache add name="connect" spec="2.0.7" args=["connect","2.0.7"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '2.0.7',
+16 verbose parsed url   path: '2.0.7',
+16 verbose parsed url   href: '2.0.7' }
+17 verbose addNamed [ 'connect', '2.0.7' ]
+18 verbose addNamed [ '2.0.7', '2.0.7' ]
+19 silly lockFile f768234b-connect-2-0-7 connect@2.0.7
+20 verbose lock connect@2.0.7 /Users/steva/.npm/f768234b-connect-2-0-7.lock
+21 verbose request where is /connect
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id 07ca2dbecd59c930
+24 verbose url raw /connect
+25 verbose url resolving [ 'https://registry.npmjs.org/', './connect' ]
+26 verbose url resolved https://registry.npmjs.org/connect
+27 verbose request where is https://registry.npmjs.org/connect
+28 info trying registry request attempt 1 at 19:29:58
+29 verbose etag "D9U32DMNBMD4VQL6T5VZ994V6"
+30 http GET https://registry.npmjs.org/connect
+31 http 304 https://registry.npmjs.org/connect
+32 silly registry.get cb [ 304,
+32 silly registry.get   { date: 'Thu, 12 Feb 2015 18:29:58 GMT',
+32 silly registry.get     server: 'Apache',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     'last-modified': 'Thu, 12 Feb 2015 18:29:56 GMT',
+32 silly registry.get     'cache-control': 'max-age=60',
+32 silly registry.get     etag: '"D9U32DMNBMD4VQL6T5VZ994V6"',
+32 silly registry.get     age: '36',
+32 silly registry.get     'x-served-by': 'cache-fra1234-FRA',
+32 silly registry.get     'x-cache': 'HIT',
+32 silly registry.get     'x-cache-hits': '2',
+32 silly registry.get     'x-timer': 'S1423765798.839974,VS0,VE0',
+32 silly registry.get     vary: 'Accept',
+32 silly registry.get     'content-length': '0',
+32 silly registry.get     'keep-alive': 'timeout=10, max=50',
+32 silly registry.get     connection: 'Keep-Alive' } ]
+33 verbose etag https://registry.npmjs.org/connect from cache
+34 silly lockFile f768234b-connect-2-0-7 connect@2.0.7
+35 silly lockFile f768234b-connect-2-0-7 connect@2.0.7
+36 error Error: version not found: connect@2.0.7
+36 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:125:12
+36 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+36 error     at Object.oncomplete (fs.js:108:15)
+37 error If you need help, you may report this *entire* log,
+37 error including the npm and node versions, at:
+37 error     <http://github.com/npm/npm/issues>
+38 error System Darwin 14.1.0
+39 error command "node" "/usr/local/bin/npm" "install"
+40 error cwd /Users/steva/WebstormProjects/NodeGit1/Smashing/ConnectWorks1
+41 error node -v v0.10.35
+42 error npm -v 1.4.28
+43 verbose exit [ 1, true ]
