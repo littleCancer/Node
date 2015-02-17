@@ -1,0 +1,14 @@
+{
+    "name": "application-name",
+    "version": "0.0.1",
+    "dependencies": {
+        "connect": "*",
+        "cookie-parser": "*",
+        "express-session" : "*",
+        "body-parser" : "*",
+        "morgan" : "*",
+        "users": "*",
+        "connect-session-store": "*",
+        "connect-session-file": "*"
+    }
+}
